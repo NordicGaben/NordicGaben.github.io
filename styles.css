@@ -1,0 +1,157 @@
+.me_pic{
+    border-radius: 50%
+}
+
+.main_header{
+    font-family: 'Fredoka One', cursive;
+}
+
+#greet {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#offcanvas{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+
+figcaption{
+  text-align: center;
+}
+
+
+.descriptor::first-letter{
+  color: #294a51;
+}
+
+
+/* horrible mess here on down as I don't understand responsive design yet */
+@media screen and (min-width: 1921px) {
+    .main_header {
+      font-size: 2vw;
+    }
+    #greet{
+        font-size: 1vw;
+    }
+
+    blockquote {
+      font-size: 1vw!important;
+    }
+
+    .blockquote-footer {
+      font-size: 1vw!important;
+    }
+
+  }
+
+@media screen and (min-width: 1537px) and (max-width: 1920px) {
+    .main_header {
+      font-size: 2.2vw;
+    }
+    #greet{
+        font-size: 1.5vw;
+    }
+
+    blockquote {
+      font-size: 1.5vw!important;
+    }
+
+    .blockquote-footer {
+      font-size: 1.5vw!important;
+    }
+
+  }
+
+@media screen and (min-width: 1441px) and (max-width: 1537px) {
+    .main_header {
+      font-size: 2.2vw;
+    }
+    #greet{
+        font-size: 1.5vw;
+    }
+  }
+
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
+    .main_header {
+      font-size: 3vw;
+    }
+    #greet{
+        font-size: 2vw;
+    }
+  }
+
+  @media screen and (min-width: 721px) and (max-width: 1366px) {
+    .main_header {
+      font-size: 3vw;
+    }
+    #greet{
+        font-size: 1.8vw;
+    }
+    blockquote {
+      font-size: 1.4vw!important;
+    }
+
+    .blockquote-footer {
+      font-size: 1.4vw!important;
+    }
+
+  }
+
+  @media screen and (min-width: 581px) and (max-width: 720px) {
+    .main_header {
+      font-size: 3vw;
+    }
+    #greet{
+        font-size: 1.8vw;
+    }
+
+    blockquote {
+      font-size: 1.6vw!important;
+    }
+
+    .blockquote-footer {
+      font-size: 1.6vw!important;
+    }
+
+  }
+
+  @media screen and (min-width: 471px) and (max-width: 580px) {
+    .main_header {
+      font-size: 3vw;
+    }
+    #greet{
+        font-size: 2.6vw;
+    }
+
+    blockquote {
+      font-size: 1.6vw!important;
+    }
+
+    .blockquote-footer {
+      font-size: 1.6vw!important;
+    }
+  }
+
+  @media screen and (max-width: 471px) {
+    .main_header {
+      font-size: 3vw;
+    }
+    #greet{
+        font-size: 2.5vw;
+    }
+
+    blockquote {
+      font-size: 1.6vw!important;
+    }
+
+    .blockquote-footer {
+      font-size: 1.6vw!important;
+    }
+  }
+

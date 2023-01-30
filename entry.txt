@@ -1,0 +1,73 @@
+
+<tr>
+    <th scope='row'>1</th>
+    <td><img src='http://books.google.com/books/content?id=77FYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'></td>
+    <td>Unity in Action, Third Edition</td>
+    <td>'Joe Hocking',</td>
+    <td></td>
+    <td>2022-02-08</td>
+    <td>None</td>
+    <td>414</td>
+    <td>9781617299339</td>
+    <td>1617299332</td>
+</tr>
+<tr>
+    <th scope='row'>2</th>
+    <td><img src='http://books.google.com/books/content?id=fgRPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'></td>
+    <td>The Crystal Shard</td>
+    <td>'R.A. Salvatore',</td>
+    <td></td>
+    <td>2007-01-09</td>
+    <td>None</td>
+    <td>0</td>
+    <td>9780786942466</td>
+    <td>0786942460</td>
+</tr>
+<tr>
+    <th scope='row'>3</th>
+    <td><img src='http://books.google.com/books/content?id=127IAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'></td>
+    <td>The Art of Game Design</td>
+    <td>'Jesse Schell',</td>
+    <td></td>
+    <td>2019</td>
+    <td>None</td>
+    <td>600</td>
+    <td>1138632058</td>
+    <td>9781138632059</td>
+</tr>
+<tr>
+    <th scope='row'>6</th>
+    <td><img src='https://books.google.se/googlebooks/images/no_cover_thumb.gif'></td>
+    <td>The C# Player's Guide (5th Edition)</td>
+    <td>'Henry L. Roediger III',</td>
+    <td></td>
+    <td>2021-11-15</td>
+    <td>None</td>
+    <td>489</td>
+    <td>0985580151</td>
+    <td>9780985580155</td>
+</tr>
+<tr>
+    <th scope='row'>7</th>
+    <td><img src='http://books.google.com/books/content?id=oneWAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'></td>
+    <td>Make It Stick</td>
+    <td>'Mark A. McDaniel',</td>
+    <td></td>
+    <td>2014-04-14</td>
+    <td>None</td>
+    <td>330</td>
+    <td>9780674729018</td>
+    <td>0674729013</td>
+</tr>
+<tr>
+    <th scope='row'>8</th>
+    <td><img src='http://books.google.com/books/content?id=iQSPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'></td>
+    <td>The Spine of the World</td>
+    <td></td>
+    <td></td>
+    <td>2009-04-07</td>
+    <td>None</td>
+    <td>0</td>
+    <td>9780786951079</td>
+    <td>0786951079</td>
+</tr>

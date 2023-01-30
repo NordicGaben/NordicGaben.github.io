@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="up_button.js"></script>
+
+        <title>Library Project</title>
+    </head>
+    <body style="background-color: #8a9da3">
+
+        <div class="offcanvas offcanvas-start w-25" style="background-color:#294a51;" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="true">
+            <div class="offcanvas-header justify-content-end">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-4">
+
+                <div class="d-grid gap-4 col-6 mx-auto">
+                    <a class="btn btn-outline-light btn-lg" href="index.html">
+                        <i class="bi bi-house px-3"></i>
+                        Home
+                    </a>
+                    <button type="button" class="btn btn-outline-light btn-lg active">
+                        <i class="bi bi-book px-3"></i>
+                        Library
+                    </button>
+                    <a class="btn btn-outline-light btn-lg" href="dnd.html" role="button">
+                        <i class="bi bi-code-slash px-3"></i>
+                        Code demo
+                    </a>
+                    <a class="btn btn-outline-light btn-lg" href="contact.html" role="button">
+                        <i class="bi bi-envelope-at px-3"></i>
+                        Contact me
+                    </a>
+
+                    <div class="d-flex justify-content-around mt-3">
+                        <a class="btn-outline-light btn" target="_blank" href="https://www.facebook.com/gabbinn/" ><i class="bi bi-facebook" ></i></a>
+                        <a class="btn-outline-light btn" target="_blank" href="#" ><i class="bi bi-youtube" ></i></a>
+                        <a class="btn-outline-light btn" target="_blank" href="https://twitter.com/NordicGaben" ><i class="bi bi-twitter" ></i></a>
+                        <a class="btn-outline-light btn" target="_blank" href="https://github.com/NordicGaben" ><i class="bi bi-github" ></i></a>
+                        <a class="btn-outline-light btn" target="_blank" href="https://www.linkedin.com/in/gabrielvoluson/" ><i class="bi bi-linkedin" ></i></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <button class="btn float-start" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+            <i class="bi bi-arrow-right-square-fill fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+        </button>
+
+        <div class="container invisible">
+            <div class="row">
+                <div class="col">
+                    <button class="btn float-start" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                        <i class="bi bi-arrow-right-square-fill fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="bg-dark border rounded" style="font-size: 1vw; font-family: 'Ubuntu', sans-serif; color: #ffffff">This is a prototype for a database project I'm thinking about working on as I get into flask the week after this,
+                it's the humble beginnings of digitizing my library. (This is in the very early stages and still with plenty of bugs)</p>
+        </div>
+
+        <div class="container">
+            <table class="table table-dark table-striped rounded rounded-3 overflow-hidden">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Thumbnail</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Edition</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Pages (read)</th>
+                        <th scope="col">Pages (total)</th>
+                        <th scope="col">ISBN-13</th>
+                        <th scope="col">ISBN-10</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope='row'>1</th>
+                        <td><img alt="cover" src='http://books.google.com/books/content?id=77FYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'></td>
+                        <td>Unity in Action, Third Edition</td>
+                        <td>'Joe Hocking',</td>
+                        <td></td>
+                        <td>2022-02-08</td>
+                        <td>None</td>
+                        <td>414</td>
+                        <td>9781617299339</td>
+                        <td>1617299332</td>
+                    </tr>
+                    <tr>
+                        <th scope='row'>2</th>
+                        <td><img alt="cover" src='http://books.google.com/books/content?id=fgRPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'></td>
+                        <td>The Crystal Shard</td>
+                        <td>'R.A. Salvatore',</td>
+                        <td></td>
+                        <td>2007-01-09</td>
+                        <td>None</td>
+                        <td>0</td>
+                        <td>9780786942466</td>
+                        <td>0786942460</td>
+                    </tr>
+                    <tr>
+                        <th scope='row'>3</th>
+                        <td><img alt="cover" src='http://books.google.com/books/content?id=127IAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'></td>
+                        <td>The Art of Game Design</td>
+                        <td>'Jesse Schell',</td>
+                        <td></td>
+                        <td>2019</td>
+                        <td>None</td>
+                        <td>600</td>
+                        <td>1138632058</td>
+                        <td>9781138632059</td>
+                    </tr>
+                    <tr>
+                        <th scope='row'>6</th>
+                        <td><img alt="cover" src='https://books.google.se/googlebooks/images/no_cover_thumb.gif'></td>
+                        <td>The C# Player's Guide (5th Edition)</td>
+                        <td>'Henry L. Roediger III',</td>
+                        <td></td>
+                        <td>2021-11-15</td>
+                        <td>None</td>
+                        <td>489</td>
+                        <td>0985580151</td>
+                        <td>9780985580155</td>
+                    </tr>
+                    <tr>
+                        <th scope='row'>7</th>
+                        <td><img alt="cover" src='http://books.google.com/books/content?id=oneWAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'></td>
+                        <td>Make It Stick</td>
+                        <td>'Mark A. McDaniel',</td>
+                        <td></td>
+                        <td>2014-04-14</td>
+                        <td>None</td>
+                        <td>330</td>
+                        <td>9780674729018</td>
+                        <td>0674729013</td>
+                    </tr>
+                    <tr>
+                        <th scope='row'>8</th>
+                        <td><img alt="cover" src='http://books.google.com/books/content?id=iQSPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'></td>
+                        <td>The Spine of the World</td>
+                        <td></td>
+                        <td></td>
+                        <td>2009-04-07</td>
+                        <td>None</td>
+                        <td>0</td>
+                        <td>9780786951079</td>
+                        <td>0786951079</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top justify-content-center" role="button"><i class="bi bi-arrow-up"></i></a>
+    </body>
+</html>
